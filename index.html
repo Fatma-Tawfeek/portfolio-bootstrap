@@ -1,378 +1,1160 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Fokir - Personal Portfolio Bootstrap Template</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
+        <title>Daniels</title>
     </head>
     <body>
-        <!-- start home section  -->
-        <div class="home" id="home">
-            <div class="overlay">
+        <!-- header section -->
+        <header>
+            <nav
+                class="navbar navbar-expand-lg position-fixed w-100 pt-3 bg-black z-3 bg-opacity-25"
+                id="navbar-example2"
+            >
                 <div class="container">
-                    <div class="navbar">
-                        <div class="logo">
-                            <a href="index.html">Fokir</a>
-                        </div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#testimonials">Testimonials</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                    <a class="navbar-brand text-uppercase text-white" href="#">Daniels</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-underline ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white me-2 active"
+                                    aria-current="page"
+                                    href="#home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#portfolio">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#testimnoials">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main section -->
+        <main>
+            <div
+                data-bs-spy="scroll"
+                data-bs-target="#navbar-example2"
+                data-bs-root-margin="0px 0px -40%"
+                data-bs-smooth-scroll="true"
+                class="scrollspy-example"
+                tabindex="0"
+            >
+                <!-- hero section -->
+                <section
+                    class="hero vh-100 d-flex justify-content-center align-items-center"
+                    id="home"
+                >
+                    <div
+                        class="container d-flex justify-content-center align-items-center text-white text-center"
+                    >
+                        <div class="row">
+                            <h5 class="display-5 fw-bolder">Hello</h5>
+                            <h1 class="display-3 fw-lighter">I Am</h1>
+                            <ul class="list-unstyled d-flex justify-content-center gap-3 mt-5">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-white bg-black bg-opacity-25 rounded-circle"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-white bg-black bg-opacity-25 rounded-circle"
+                                        href="#"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-white bg-black bg-opacity-25 rounded-circle"
+                                        href="#"
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-white bg-black bg-opacity-25 rounded-circle"
+                                        href="#"
+                                        ><i class="fab fa-behance"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-white bg-black bg-opacity-25 rounded-circle"
+                                        href="#"
+                                        ><i class="fab fa-youtube"></i
+                                    ></a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="clear-fix"></div>
                     </div>
-                    <div class="home-info">
-                        <h3>Hello i'm</h3>
-                        <h1>alex smith</h1>
-                        <h2>Professional Web <span class="typed-text"></span></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end home section -->
+                </section>
 
-        <!-- start about section -->
-        <div class="about" id="about">
-            <div class="container">
-                <div class="image">
-                    <div class="personal-img">
-                        <img src="images/about.jpg" alt="personal-img" />
-                        <div class="social-media-icons">
-                            <div class="inner-icons">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"> <i class="fa-brands fa-google"></i></a>
-                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <!-- about section -->
+                <section class="about py-5" id="about">
+                    <div class="container py-5">
+                        <div class="row gy-3">
+                            <div class="col-md-5">
+                                <div class="about-img">
+                                    <img src="imgs/hero.jpg" alt="man with hat" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h2>About Me.</h2>
+                                <span>UI / UX Designer & Web Developer </span>
+                                <p>
+                                    I am <strong>Jerry Daniels</strong> Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever It has survived not
+                                    only five centuries, but also the leap into electronic but also
+                                    the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing
+                                </p>
+                                <div
+                                    class="progress mt-4"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    aria-valuenow="95"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div class="progress-bar bg-dark" style="width: 95%">
+                                        <div class="d-flex justify-content-between px-2">
+                                            <p class="text-white fw-medium">Web Design</p>
+                                            <p class="text-white">95%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="progress mt-4"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div class="progress-bar bg-dark" style="width: 80%">
+                                        <div class="d-flex justify-content-between px-2">
+                                            <p class="text-white fw-medium">Branding</p>
+                                            <p class="text-white">80%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="progress mt-4"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div class="progress-bar bg-dark" style="width: 90%">
+                                        <div class="d-flex justify-content-between px-2">
+                                            <p class="text-white fw-medium">Development</p>
+                                            <p class="text-white">90%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-btn mt-5 d-flex gap-2 col-md-8">
+                                    <a href="#" class="btn btn-dark">Downlaod CV</a>
+                                    <a href="#" class="btn btn-outline-dark">Contact Me</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="info">
-                    <h2>Hello,</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div class="personal-info">
-                        <ul>
-                            <li><span>Name:</span> Rdam smith</li>
-                            <li><span>Job Title:</span> UI/UX Designer</li>
-                            <li><span>Age:</span> 26 Year</li>
-                            <li><span>Location:</span> United States, US</li>
-                            <li><span>Freelance:</span> Available</li>
-                            <li><span>E-mail:</span> <a href="#">example@gmail.com</a></li>
-                        </ul>
-                        <a href="" class="btn">Download CV <i class="fa-solid fa-download"></i></a>
-                        <a href="" class="btn">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
-                    </div>
-                    <div class="clear-fix"></div>
-                </div>
-            </div>
-        </div>
-        <!-- end about section -->
+                </section>
 
-        <!-- start services section -->
-        <div class="services" id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="services-box">
-                    <div class="box">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h3>UI/UX DESIGN</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                            adipisci mollitia quis necstatibus.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="fa-regular fa-file-code"></i>
-                        <h3>APP DEVELOPMENT</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                            adipisci mollitia quis necstatibus.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <h3>PRODUCT DESIGN</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                            adipisci mollitia quis necstatibus.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-gears"></i>
-                        <h3>UI/UX DESIGN</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                            adipisci mollitia quis necstatibus.
-                        </p>
-                    </div>
-                    <div class="clear-fix"></div>
-                </div>
-            </div>
-        </div>
-        <!-- end services section -->
-
-        <!-- start portfolio section -->
-
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="portfolio-title">
-                    <h2>Our Portfolio</h2>
-                </div>
-                <div class="portfolio-category">
-                    <button class="active">All</button>
-                    <button>Graphic</button>
-                    <button>Web Design</button>
-                    <button>Branding</button>
-                </div>
-                <div class="portfolio-box">
-                    <div class="box">
-                        <img src="images/portfolio/1.jpg" alt="portfolio-1" />
-                        <div class="portfolio-overly">
-                            <i class="fa-regular fa-file-image"></i>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/portfolio/2.jpg" alt="portfolio-2" />
-                        <div class="portfolio-overly">
-                            <i class="fa-solid fa-link"></i>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/portfolio/3.jpg" alt="portfolio-3" />
-                        <div class="portfolio-overly">
-                            <i class="fa-regular fa-file-video"></i>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/portfolio/4.jpg" alt="portfolio-4" />
-                        <div class="portfolio-overly">
-                            <i class="fa-regular fa-file-image"></i>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/portfolio/5.jpg" alt="portfolio-5" />
-                        <div class="portfolio-overly">
-                            <i class="fa-solid fa-link"></i>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/portfolio/6.jpg" alt="portfolio-6" />
-                        <div class="portfolio-overly">
-                            <i class="fa-regular fa-file-image"></i>
-                        </div>
-                    </div>
-                    <div class="clear-fix"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- end portfolio section -->
-
-        <!-- start statistics section -->
-
-        <div class="statistics">
-            <div class="container">
-                <div class="statistics-box">
-                    <div class="box">
-                        <i class="fa-solid fa-users"></i>
-                        <h3>47</h3>
-                        <h5>Team members</h5>
-                    </div>
-                    <div class="box">
-                        <i class="fa-regular fa-copy"></i>
-                        <h3>81</h3>
-                        <h5>Complete Projects</h5>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                        <h3>428</h3>
-                        <h5>Files Downloaded</h5>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-mug-saucer"></i>
-                        <h3>285</h3>
-                        <h5>Lines Of Code</h5>
-                    </div>
-                    <div class="clear-fix"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- end statistics section -->
-
-        <!-- start feedback section -->
-
-        <div class="feedback" id="testimonials">
-            <div class="container">
-                <div class="feedback-title">
-                    <h2>Client's Feedback</h2>
-                </div>
-                <div class="feedback-box">
-                    <div class="box">
-                        <div class="feedback-img">
-                            <img src="images/feedback.jpg" alt="team-1" />
-                        </div>
-                        <div class="feedback-content">
-                            <h3>Alex ander</h3>
-                            <h4><i class="fa-solid fa-location-dot"></i> United</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Exercitationem ducimus ex magni sunt, architecto vel dolore,
-                                laudantium dignissimos debitis optio! Exercitationem adipisicing
-                                elit.
-                            </p>
-                            <div class="review-reating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                <!-- service section -->
+                <section class="services bg-light py-5" id="services">
+                    <div class="container py-5 text-center">
+                        <div class="row gy-4">
+                            <div class="col-md-12">
+                                <h2 class="section-title text-center fs-1 mb-5">Services.</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-solid fa-laptop fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Web Design</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-solid fa-bullhorn fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Branding</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-solid fa-umbrella fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Development</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-regular fa-gem fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Creative Design</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-solid fa-display fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Fully Responsive</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div
+                                    class="service-box shadow-sm rounded bg-white text-center py-5 px-3"
+                                >
+                                    <div
+                                        class="service-icon bg-light rounded-circle p-4 d-inline-block mb-3"
+                                    >
+                                        <i class="fa-solid fa-camera fs-4"></i>
+                                    </div>
+                                    <div class="service-title">
+                                        <h3 class="fs-5">Retina Ready</h3>
+                                    </div>
+                                    <div class="service-desc">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the Lorem Ipsum has
+                                            been the industry's standard dummy text ever
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="clear-fix"></div>
                     </div>
-                </div>
+                </section>
+
+                <!-- Portfolio section -->
+                <section class="portfolio py-5" id="portfolio">
+                    <div class="container text-center py-5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-title fs-1 mb-5">Portfolio.</h2>
+                            </div>
+                            <ul
+                                class="nav nav-underline justify-content-center"
+                                id="myTab"
+                                role="tablist"
+                            >
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-dark fw-bold active"
+                                        id="all-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#all-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="all-tab-pane"
+                                        aria-selected="true"
+                                    >
+                                        All
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-dark fw-bold"
+                                        id="brand-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#brand-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="brand-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Brand
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-dark fw-bold"
+                                        id="design-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#design-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="design-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Design
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link text-dark fw-bold"
+                                        id="graphic-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#graphic-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="graphic-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Graphic
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-4" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="all-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="all-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/1.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/2.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/3.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/4.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/5.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/6.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="brand-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="brand-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/4.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/6.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="design-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="design-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/2.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/5.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="graphic-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="graphic-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/1.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/3.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="portfolio-box px-1 py-3 position-relative">
+                                                <img
+                                                    src="imgs/portfolio/5.jpg"
+                                                    alt="charger"
+                                                    class="w-100"
+                                                />
+                                                <div
+                                                    class="overlay position-absolute top-50 start-50"
+                                                >
+                                                    <span
+                                                        class="text-uppercase mb-2 fw-bold position-absolute top-50 start-50"
+                                                        >Web Design</span
+                                                    >
+                                                    <div
+                                                        class="icon-group position-absolute top-50 start-50"
+                                                    >
+                                                        <a href="#" class="rounded-circle p-2"
+                                                            ><i class="fa-solid fa-link"></i
+                                                        ></a>
+                                                        <a href="#" class="search rounded-circle"
+                                                            ><i
+                                                                class="fa-solid fa-magnifying-glass-plus"
+                                                            ></i
+                                                        ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- testimnoials section  -->
+                <section class="testimnoials py-5 bg-light" id="testimnoials">
+                    <div class="container text-center py-5">
+                        <h2 class="section-title fs-1 mb-5">Testimnoials.</h2>
+
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-img">
+                                        <img
+                                            src="imgs/1_New1.jpg"
+                                            class="d-block rounded-circle"
+                                            alt="client-img"
+                                        />
+                                    </div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <div class="client-name mt-4">
+                                        <span class="fw-semibold">Alex Smith</span>
+                                        <p class="client-role">Envato Customer</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-img">
+                                        <img
+                                            src="imgs/1_New1.jpg"
+                                            class="d-block rounded-circle"
+                                            alt="client-img"
+                                        />
+                                    </div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <div class="client-name mt-4">
+                                        <span class="fw-semibold">Alex Smith</span>
+                                        <p class="client-role">Envato Customer</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-img">
+                                        <img
+                                            src="imgs/1_New1.jpg"
+                                            class="d-block rounded-circle"
+                                            alt="client-img"
+                                        />
+                                    </div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <div class="client-name mt-4">
+                                        <span class="fw-semibold">Alex Smith</span>
+                                        <p class="client-role">Envato Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2"
+                                    aria-label="Slide 3"
+                                ></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- statistics section  -->
+                <section class="statictics py-5">
+                    <div class="container py-5 text-center">
+                        <div class="row">
+                            <div class="stat-item col-md-3">
+                                <i class="fa-solid fa-users fa-2xl"></i>
+                                <h3 class="my-3">850</h3>
+                                <p class="fw-semibold">Happy Customers</p>
+                            </div>
+                            <div class="stat-item col-md-3">
+                                <i class="fa-solid fa-thumbs-up fa-2xl"></i>
+                                <h3 class="my-3">230</h3>
+                                <p class="fw-semibold">Complete Projects</p>
+                            </div>
+                            <div class="stat-item col-md-3">
+                                <i class="fa-solid fa-bullhorn fa-2xl"></i>
+                                <h3 class="my-3">9450</h3>
+                                <p class="fw-semibold">Lines Of Code</p>
+                            </div>
+
+                            <div class="stat-item col-md-3">
+                                <i class="fa-solid fa-cloud-arrow-down fa-2xl"></i>
+                                <h3 class="my-3">780</h3>
+                                <p class="fw-semibold">Files Downloaded</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- team section  -->
+                <section class="team py-5 bg-light" id="team">
+                    <div class="container text-center py-5">
+                        <div class="row gy-3">
+                            <div class="col-md-12">
+                                <h2 class="section-title text-center fs-1 mb-5">Our Team.</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card rounded overflow-hidden">
+                                    <div class="card-img rounded-0 position-relative">
+                                        <img
+                                            src="imgs/1.jpg"
+                                            class="card-img-top"
+                                            alt="team-member"
+                                        />
+                                        <div class="overlay">
+                                            <div
+                                                class="icon-group position-absolute top-50 start-50"
+                                            >
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-facebook-f"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-twitter"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-pinterest"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-linkedin-in"></i
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white fw-semibold fs-4 mb-0">
+                                            John Doe
+                                        </h5>
+                                        <p class="card-text text-white fw-bold fs-4">
+                                            Front-End Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card rounded overflow-hidden">
+                                    <div class="card-img rounded-0 position-relative">
+                                        <img
+                                            src="imgs/2.jpg"
+                                            class="card-img-top"
+                                            alt="team-member"
+                                        />
+                                        <div class="overlay">
+                                            <div
+                                                class="icon-group position-absolute top-50 start-50"
+                                            >
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-facebook-f"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-twitter"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-pinterest"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-linkedin-in"></i
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white fw-semibold fs-4 mb-0">
+                                            Dave Wood
+                                        </h5>
+                                        <p class="card-text text-white fw-bold fs-4">
+                                            Back-End Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card rounded overflow-hidden">
+                                    <div class="card-img rounded-0 position-relative">
+                                        <img
+                                            src="imgs/1.jpg"
+                                            class="card-img-top"
+                                            alt="team-member"
+                                        />
+                                        <div class="overlay">
+                                            <div
+                                                class="icon-group position-absolute top-50 start-50"
+                                            >
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-facebook-f"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-twitter"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-pinterest"></i
+                                                ></a>
+
+                                                <a href="#" class="rounded-circle"
+                                                    ><i class="fa-brands fa-linkedin-in"></i
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white fw-semibold fs-4 mb-0">
+                                            Claire Chedd
+                                        </h5>
+                                        <p class="card-text text-white fw-bold fs-4">
+                                            Back-End Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact section  -->
+                <section class="contact py-5" id="contact">
+                    <div class="container text-center py-5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-title text-center fs-1 mb-5">Contact Us.</h2>
+                            </div>
+                            <div class="col-md-4 service-box">
+                                <div
+                                    class="service-icon bg-light rounded-circle p-3 d-inline-block mb-3"
+                                >
+                                    <i class="fa-solid fa-location-arrow fa-xl"></i>
+                                </div>
+                                <h5 class="fs-6">Address</h5>
+                                <p>6834 Hollywood Blvd - Los Angeles CA</p>
+                            </div>
+                            <div class="col-md-4 service-box">
+                                <div
+                                    class="service-icon bg-light rounded-circle p-3 d-inline-block mb-3"
+                                >
+                                    <i class="fa-solid fa-envelope fa-xl"></i>
+                                </div>
+                                <h5 class="fs-6">Email</h5>
+                                <p>Support@website.com</p>
+                            </div>
+                            <div class="col-md-4 service-box">
+                                <div
+                                    class="service-icon bg-light rounded-circle p-3 d-inline-block mb-3"
+                                >
+                                    <i class="fa-solid fa-phone fa-xl"></i>
+                                </div>
+                                <h5 class="fs-6">Phone</h5>
+                                <p>+20 010 2517 8918</p>
+                            </div>
+                            <form class="mt-5 px-md-5 text-start" action="#" method="post">
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <input
+                                            type="text"
+                                            class="form-control col-md-6 border-0 bg-light"
+                                            placeholder="Name"
+                                        />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input
+                                            type="email"
+                                            class="form-control col-md-6 border-0 bg-light"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                </div>
+
+                                <textarea
+                                    name="message"
+                                    class="form-control mt-3 border-0 fs-6 bg-light"
+                                    id=""
+                                    rows="6"
+                                    placeholder="Message"
+                                ></textarea>
+                                <button type="submit" class="btn btn-dark mt-3 px-4 py-2">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
+        </main>
 
-        <!-- start feedback section -->
-
-        <!-- start blog section -->
-
-        <div class="blog" id="blog">
+        <!-- footer section -->
+        <footer class="text-center py-4">
             <div class="container">
-                <div class="blog-title">
-                    <h2>Our Blog</h2>
-                </div>
-                <div class="blog-box">
-                    <div class="box">
-                        <div class="post-thumbnail">
-                            <img src="images/blog/12.jpg" alt="blog-1" />
-                        </div>
-                        <div class="blog-content">
-                            <p class="date">23 November, 2015</p>
-                            <h3>Web Design Blog Post</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                                molestiae.
-                            </p>
-                            <a href="#">Read More <i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="post-thumbnail">
-                            <iframe
-                                src="https://www.youtube.com/embed/uVju5--RqtY?si=qOvmjs_2cid77EDW"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="blog-content">
-                            <p class="date">20 April, 2018</p>
-                            <h3>Development Blog Post</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                                molestiae.
-                            </p>
-                            <a href="#">Read More <i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="post-thumbnail">
-                            <img src="images/blog/32.jpg" alt="blog-1" />
-                        </div>
-                        <div class="blog-content">
-                            <p class="date">17 May, 2017</p>
-                            <h3>Full Width Blog Post</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur ea, quis magnam deserunt eius incidunt repellat
-                                molestiae.
-                            </p>
-                            <a href="#">Read More <i class="fa-solid fa-right-long"></i></a>
-                        </div>
-                    </div>
-                    <div class="clear-fix"></div>
-                </div>
+                <div class="row"><p>Copy Right 2018 © By Daniels All Rights Reserved</p></div>
             </div>
-        </div>
-
-        <!-- end start section -->
-
-        <!-- start contact section -->
-
-        <div class="contact" id="contact">
-            <div class="container">
-                <div class="contact-title">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="contact-box">
-                    <form action="">
-                        <div class="inline-inputs">
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <div class="clear-fix"></div>
-                        </div>
-                        <input type="text" placeholder="Subject" />
-                        <textarea name="" id="" rows="4" placeholder="Message for me"></textarea>
-                        <a class="btn">Send Message</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- end contact section -->
-
-        <!-- start footer section -->
-
-        <div class="footer">
-            <div class="container">
-                <div class="footer-box">
-                    <div class="footer-box-content">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"> <i class="fa-brands fa-google"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <p>
-                        Copy Right 2018 &copy; By <a href="#" class="footer-link">Theme-fair</a> All
-                        Rights Reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- end footer section -->
+            <script src="js/bootstrap.bundle.js"></script>
+        </footer>
     </body>
 </html>

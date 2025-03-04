@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+/*******************
+reusable classes
+*******************/
+
+.container {
+    max-width: 1140px !important;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+/*******************
+ Navbar
+*******************/
+
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+nav .navbar-nav {
+    font-size: 14px;
+}
+
+/***********************
+ hero section
+***********************/
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../imgs/bg.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.hero ul li a {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.hero h1::after {
+    content: "|";
+    font-weight: 300;
+    transform-origin: left;
+    animation: typing 8s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: " Larry Daniels|";
+        transform: translateX(100%);
+    }
+    20% {
+        content: "|";
+        transform: translateX(0);
+    }
+    40% {
+        content: " Developer|";
+        transform: translateX(100%);
+    }
+    60% {
+        content: "|";
+        transform: translateX(0);
+    }
+    80% {
+        content: " Designer|";
+        transform: translateX(100%);
+    }
+    100% {
+        content: "|";
+        transform: translateX(0);
+    }
+}
+
+/***********************
+ about section
+***********************/
+
+.about .about-img {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin-bottom: 30px;
+}
+
+.about .about-img img {
+    width: 100%;
+}
+
+.about .about-img::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.about span {
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.about .progress {
+    height: 25px;
+}
+
+.about .progress .progress-bar p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.about-btn .btn {
+    font-size: 12px;
+    padding: 10px 30px;
+}
+
+/***********************
+ services section
+***********************/
+
+.service-box .service-icon {
+    transition: all 0.5s ease;
+}
+.service-box:hover .service-icon {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+/***********************
+ Portfolio section
+***********************/
+
+.portfolio .portfolio-box .overlay {
+    transform: translate(-50%, -45%);
+    background-color: #fff;
+    height: 87%;
+    width: 95%;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.portfolio .portfolio-box:hover .overlay {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.portfolio .portfolio-box .overlay span {
+    transform: translate(-50%, -150%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all 0.5s 0.3s;
+}
+
+.portfolio .portfolio-box:hover .overlay span {
+    transform: translate(-50%, -100%);
+    opacity: 1;
+}
+
+.portfolio .portfolio-box .overlay .icon-group {
+    transform: translate(-50%, 100%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all 0.5s 0.3s;
+}
+
+.portfolio .portfolio-box .overlay .icon-group a {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid transparent;
+}
+
+.portfolio .portfolio-box .overlay .icon-group a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.portfolio .portfolio-box .overlay .icon-group .search {
+    padding: 8px 9px;
+}
+
+.portfolio .portfolio-box:hover .overlay .icon-group {
+    transform: translate(-50%, 80%);
+    opacity: 1;
+}
+
+/***********************
+ Testimonail section
+***********************/
+
+.testimnoials .carousel-item .carousel-img img {
+    width: 90px;
+    margin: 20px auto;
+}
+
+.testimnoials .carousel-item .client-role {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background-color: #d6d6d6;
+    border-radius: 100%;
+}
+
+/***********************
+ Team section
+***********************/
+
+.team .card .overlay {
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    height: 97%;
+    width: 97%;
+    background-color: #fff;
+    opacity: 0;
+    transform: scale(0.5) rotateY(180deg);
+    transform-origin: center center;
+    transition: all 0.6s;
+}
+
+.team .card:hover .overlay {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+}
+
+.team .overlay .icon-group {
+    transform: translate(-50%, -50%);
+}
+
+.team .overlay .icon-group a {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+}
+
+.team .overlay .icon-group a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.team .card .card-img {
+    overflow: hidden;
+}
+
+.team .card img {
+    transition: all 0.6s;
+}
+
+.team .card:hover img {
+    transform: scale(1.2);
+}
+
+/***********************
+Footer 
+***********************/
+footer {
+    background-color: #1c1c1c;
+}
+
+footer p {
+    font-size: 12px;
+}
